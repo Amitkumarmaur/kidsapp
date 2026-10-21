@@ -1,0 +1,72 @@
+# KidGuard .gitignore: Flutter (parent-app), Android/Kotlin (child-app), Supabase (backend)
+
+# ---------- Secrets: never commit ----------
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+key.properties
+google-services.json
+GoogleService-Info.plist
+service-account*.json
+
+# ---------- OS and editors ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.iml
+*.swp
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# ---------- Claude Code local settings ----------
+.claude/settings.local.json
+
+# ---------- Android / Gradle (child-app and parent-app/android) ----------
+.gradle/
+build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+output-metadata.json
+
+# ---------- Flutter / Dart (parent-app) ----------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+coverage/
+*.g.dart.tmp
+
+# ---------- Supabase (backend) ----------
+backend/supabase/.branches/
+backend/supabase/.temp/
+backend/supabase/.env
+supabase/.branches/
+supabase/.temp/
+
+# ---------- Node (Supabase CLI, tooling) ----------
+node_modules/
+npm-debug.log*
+
+# ---------- Office temp files ----------
+~$*
