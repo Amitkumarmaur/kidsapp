@@ -1,0 +1,12 @@
+{
+  "name": "kidguard-backend-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Offline checks for the KidGuard Supabase backend (no Docker needed)",
+  "scripts": {
+    "test": "node test-offline.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.10"
+  }
+}
